@@ -26,6 +26,6 @@ Evaluating,
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left[\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = 1$$
 
-$$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)) - \exp(C + \sum_{j \leq i} \lambda_j(k_i - k_j))\right) = 1$$
+$$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)) - \exp(N + \sum_{j \leq i} \lambda_j(k_i - k_j))\right) = 1$$
 
 This telescopes.
