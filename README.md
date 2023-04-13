@@ -20,16 +20,10 @@ Letting $k_0=0$ and $k_{n+1}=\infty$, and denoting the prices of the call option
 
 $$\sum_{i=0}^n \int_{k_i}^{k_{i+1}} \exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = 1$$
 
-$$\sum_{i=m}^n \int_{k_i}^{k_{i+1}} x\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = C_m$$
+$$\sum_{i=m}^n \int_{k_i}^{k_{i+1}} (x-k_m)\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = C_m$$
 
 Evaluating the first constraint yields
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left[\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = 1$$
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)) - \exp(N + \sum_{j \leq i} \lambda_j(k_i - k_j))\right) = 1$$
-
-Evaluating the second constraint yields
-
-$$\sum_{i=m}^n \left(\sum_{j\leq i}\lambda_j\right)^{-2}\left[\left(\left(\sum_{j\leq i}\lambda_j\right)x-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(x-k_j)\right)\right]_{k_i}^{k_{i+1}}= C_m$$
-
-$$\sum_{i=m}^n \left(\sum_{j\leq i}\lambda_j\right)^{-2}\left(\left(\left(\sum_{j\leq i}\lambda_j\right)k_{i+1}-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)\right)-\left(\left(\sum_{j\leq i}\lambda_j\right)k_i-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_i-k_j)\right)\right)= C_m$$
