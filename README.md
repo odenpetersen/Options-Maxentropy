@@ -33,3 +33,15 @@ Evaluating the second category of constraints yields
 $$\sum_{i=m}^n\left(\sum_{j\leq i}\lambda_j\right)^{-2}\left[\left(\left(\sum_{j\leq i}\lambda_j\right)(x-k_m)-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(x-k_j)\right)\right]_{k_i}^{k_{i+1}} = C_m$$
 
 $$\sum_{i=m}^n\left(\sum_{j\leq i}\lambda_j\right)^{-2}\left(\left(\left(\sum_{j\leq i}\lambda_j\right)(k_{i+1}-k_m)-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)\right)-\left(\left(\sum_{j\leq i}\lambda_j\right)(k_i-k_m)-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_i-k_j)\right)\right)= C_m$$
+
+We can solve this system of equations for the $\lambda$s (and for $N$) using Newton's method (note: *actual* Newton's method, not Newton's method applied to the gradient). This gives the parameters of the probability distribution.
+
+From here we can:
+- Look for historical patterns of reversion, (e.g. Wasserstein, KLD)
+- Use this as a prior to be updated using other features
+- Compare the distributions for different expiries (e.g. Wasserstein, KLD)
+- Compute local volatility surface (or other moments)
+- Identify contracts that ought to have a tighter spread
+- Compute the returns distribution of a particular position
+
+The above reasoning can clearly be extended to incorporate put contract prices also.
