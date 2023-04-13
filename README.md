@@ -3,7 +3,7 @@ Given price of calls and underlying, find the probability distribution with maxi
 
 ## How?
 Let $k_i$ be the $n$ different strike prices in increasing order. The Lagrangian of the problem is:
-$$\int_{\mathbb{R}^+} \left(-p(x)\ln(p(x)) + \lambda_N p(x) + \lambda_s xp(x) + \sum_{i}\lambda_i\max(x-k_i,0)p(x) \right)dx$$
+$$\int_{\mathbb{R}^+} \left(-p(x)\ln(p(x)) + \lambda_N p(x) + \lambda_0 xp(x) + \sum_{i=1}^n\lambda_i\max(x-k_i,0)p(x) \right)dx$$
 
 Gradient of Lagrangian wrt $p$ is zero at the maxima:
 $$-(\ln(p(x)) + 1) + \lambda_N + \lambda_0 x + \sum_{i=1}^n\lambda_i\max(x-k_i,0) = 0$$
