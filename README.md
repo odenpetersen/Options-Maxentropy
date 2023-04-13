@@ -30,4 +30,4 @@ $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i
 
 Evaluating the second category of constraints yields
 
-$$\sum_{i=m}^n\left[\left(\frac{\left(\sum_{j\leq i}\lambda_j\right)(x-k_m)-1}{\left(\sum_{j\leq i}\right)^2}\right)\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = C_m$$
+$$\sum_{i=m}^n\left(\sum_{j\leq i}\right)^{-2}\left[\left(\left(\sum_{j\leq i}\lambda_j\right)(x-k_m)-1\right)\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = C_m$$
