@@ -19,11 +19,13 @@ Note that for the RHS to integrate to a finite value we require $$\sum_{i=0}^n\l
 Letting $k_0=0$ and $k_{n+1}=\infty$, and denoting the prices of the call options by $C_i$ (with stock price being $C_0$), we can derive the particular constraints:
 
 $$\sum_{i=0}^n \int_{k_i}^{k_{i+1}} \exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = 1$$
+
 $$\sum_{i=m}^n \int_{k_i}^{k_{i+1}} x\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = C_m$$
 
 Evaluating,
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left[\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = 1$$
+
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)) - \exp(C + \sum_{j \leq i} \lambda_j(k_i - k_j))\right) = 1$$
 
 This telescopes.
