@@ -31,3 +31,5 @@ $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i
 Evaluating the second constraint yields
 
 $$\sum_{i=m}^n \left(\sum_{j\leq i}\lambda_j\right)^{-2}\left[\left(\left(\sum_{j\leq i}\lambda_j\right)x-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(x-k_j)\right)\right]_{k_i}^{k_{i+1}}= C_m$$
+
+$$\sum_{i=m}^n \left(\sum_{j\leq i}\lambda_j\right)^{-2}\left(\left(\left(\sum_{j\leq i}\lambda_j\right)k_{i+1}-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)\right)-\left(\left(\sum_{j\leq i}\lambda_j\right)k_i-1\right)\exp\left(N + \sum_{j\leq i} \lambda_j(k_i-k_j)\right)\right)= C_m$$
