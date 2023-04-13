@@ -22,10 +22,12 @@ $$\sum_{i=0}^n \int_{k_i}^{k_{i+1}} \exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx 
 
 $$\sum_{i=m}^n \int_{k_i}^{k_{i+1}} x\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx = C_m$$
 
-Evaluating,
+Evaluating the first constraint yields
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left[\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))\right]_{k_i}^{k_{i+1}} = 1$$
 
 $$\sum_{i=0}^n \left(\sum_{j\leq i} \lambda_j\right)\left(\exp(N + \sum_{j\leq i} \lambda_j(k_{i+1}-k_j)) - \exp(N + \sum_{j \leq i} \lambda_j(k_i - k_j))\right) = 1$$
 
-This telescopes.
+Evaluating the second constraint yields
+
+$$\sum_{i=m}^n \left[\left(\left(\frac{\sum_{j\leq i}\lambda_j\right)x-1}{\left(\sum_{j\leq i}\lambda_j\right)^2}\right)\exp(N + \sum_{j\leq i} \lambda_j(x-k_j))dx\right]_{k_i}^{k_{i+1}}= C_m$$
