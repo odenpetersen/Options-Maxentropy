@@ -47,3 +47,5 @@ From here we can:
 The above reasoning can clearly be extended to incorporate put contract prices also. However, these shouldn't give any information not contained in the call prices, so long as put-call parity holds.
 
 Separate distributions can be obtained using bid and ask prices at various depths.
+
+One might alternatively consider computing the entropy with respect to a logarithmically transformed measure. My conjecture would be that this results in vanishing probability density at zero.
