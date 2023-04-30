@@ -44,4 +44,6 @@ From here we can:
 - Identify contracts that ought to have a tighter spread
 - Compute the returns distribution of a particular position
 
-The above reasoning can clearly be extended to incorporate put contract prices also.
+The above reasoning can clearly be extended to incorporate put contract prices also. However, these shouldn't give any information not contained in the call prices, so long as put-call parity holds.
+
+Separate distributions can be obtained using bid and ask prices at various depths.
